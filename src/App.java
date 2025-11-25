@@ -12,6 +12,17 @@ public class App {
         System.out.println("valor do topo: " + p.valorTopo());
         System.out.println(" ");
 
+        //pilha generica com int
+        PilhaGenerica<Integer> pg = new PilhaGenerica<Integer>();
+        pg.inserirVarios(1,2,3,4,5);
+        pg.imprimir();
+        Integer a = pg.remove();
+        System.out.println("Removeu: " + a);
+        pg.inserir(500);
+        pg.imprimir();
+        pg.desempilha(100);
+        pg.imprimir();
+        System.out.println(" ");
 
         //pilha generica com string
         PilhaGenerica<String> pilhaDeNomes = new PilhaGenerica<String>();
